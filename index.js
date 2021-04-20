@@ -6,7 +6,7 @@ var broadcast = null;
 var interval = null;
 
 client.on('ready', async () => {
-  client.user.setActivity(STATUS + " 😎")
+  client.user.setActivity(STATUS + "help")
   let channel = client.channels.cache.get(CHANNEL) || await client.channels.fetch(CHANNEL)
 
   broadcast = client.voice.createBroadcast();
